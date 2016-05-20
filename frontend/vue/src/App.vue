@@ -1,7 +1,7 @@
 <template>
     <div class="chat-wrapper">
         <div class="chat">
-            <h1> Meteor-Vue-Chat </h1>
+            <h1> Meteor Agnostic Chat </h1>
 
             <content v-el:content>
                 <p v-for="m in messages" class="message">

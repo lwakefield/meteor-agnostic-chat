@@ -3,21 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Meteor-Vue-Chat</title>
+    <title> Meteor Agnostic Chat </title>
     <script type="text/javascript" src="/dist/app.js" charset="utf-8"></script>
 </head>
 
 <body>
     <div class="chat-wrapper">
         <div class="chat">
-            <h1> Meteor-Vue-Chat </h1>
+            <h1> Meteor Agnostic Chat </h1>
 
             <content></content>
 
             <div>
                 <form>
-                    <input type="text" placeholder="From" name="from" v-model="from">
-                    <input type="text" placeholder="Message" name="new-message" v-model="newMessage">
+                    <input type="text" placeholder="From" name="from" required v-model="from">
+                    <input type="text" placeholder="Message" name="new-message" required v-model="newMessage">
                     <button type="submit">Send</button>
                 </form>
             </div>

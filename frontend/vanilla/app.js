@@ -15,7 +15,7 @@ asteroid.ddp.on('added', ({ collection, id, fields }) => {
         message.id = `message-${id}`;
         message.innerHTML = `
             <img src="https://api.adorable.io/avatars/40/${fields.from}" height="30" width="30">
-            <strong>${fields.from}</strong>&nbsp;${fields.message}
+            &nbsp;<strong>${fields.from}</strong>&nbsp;${fields.message}
         `;
         let content = $('content');
         content.appendChild(message);
