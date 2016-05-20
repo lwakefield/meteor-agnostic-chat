@@ -23,15 +23,17 @@ asteroid.ddp.on('added', ({ collection, id, fields }) => {
     }
 });
 
-$('form').addEventListener('submit', e => {
-    e.preventDefault();
-    let from = $('input[name="from"]').value;
-    let message = $('input[name="new-message"]').value;
+document.addEventListener('DOMContentLoaded', () => {
+    $('form').addEventListener('submit', e => {
+        e.preventDefault();
+        let from = $('input[name="from"]').value;
+        let message = $('input[name="new-message"]').value;
 
-    if (!from || !message) return;
+        if (!from || !message) return;
 
-    asteroid.call('addMessage', from, message)
-        .then(result => {
-            $('input[name="new-message"]').value = '';
-        });
-});
+        asteroid.call('addMessage', from, message)
+            .then(result => {
+                $('input[name="new-message"]').value = '';
+            });
+    });
+})
