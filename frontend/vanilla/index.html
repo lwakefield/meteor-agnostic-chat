@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Meteor-Vue-Chat</title>
+</head>
+
+<body>
+    <div class="chat-wrapper">
+        <div class="chat">
+            <h1> Meteor-Vue-Chat </h1>
+
+            <content></content>
+
+            <div>
+                <form @submit.stop.prevent="sendMessage">
+                    <input type="text" placeholder="From" name="from" v-model="from">
+                    <input type="text" placeholder="Message" name="new-message" v-model="newMessage">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="/dist/app.js" charset="utf-8"></script>
+</body>
+
+</html>
