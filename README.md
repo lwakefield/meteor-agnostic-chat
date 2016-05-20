@@ -25,3 +25,13 @@ npm run dev
 ```
 
 Then browse to [http://localhost:8080](http://localhost:8080).
+
+You can even run another client alongside...
+
+```
+cd frontend/vue
+npm install
+webpack-dev-server --inline --hot --port=8081 # or npm run dev if you want to run it normally
+```
+
+And check it out on [http://localhost:8081](http://localhost:8081).
